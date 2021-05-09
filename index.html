@@ -8,19 +8,26 @@
     <title>Tesian Bank</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-   <div class="login-area container mt-5">
-    <h1 class="text-center text-white font-weight-bold">Welcome to Tesian Bank</h1>
-    <div class="submit-area">
-        <h2 class="text-center ">Login</h2>
-        <input type="text" class="form-control my-3" placeholder="Account Number">
-        <input type="password" name="" id="" class="form-control my-3" placeholder="Password">
-        <button class="btn btn-login">Submit</button>
+<body id="full-area">
+    <div id="login-area" class="login-area container mt-5">
+        <h1 class="text-center text-white font-weight-bold">Welcome to Tesian Bank</h1>
+        <div class="submit-area">
+            <h2 class="text-center ">Login</h2>
+            <input type="text" class="form-control my-3" placeholder="Account Number">
+            <input type="password" name="" id="" class="form-control my-3" placeholder="Password">
+            <button id="login" class="btn btn-login">Submit</button>
+        </div>
     </div>
-   </div>
+    <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click" , function () {
+           const loginArea = document.getElementById("full-area");
+           loginArea.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
