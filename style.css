@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url('https://img.freepik.com/free-vector/banking-service-background-bank-building-icon-made-with-currency-symbols-dollar-euro-yen-pound-icons_127544-803.jpg?size=626&ext=jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .submit-area{
     width: 600px;
@@ -24,4 +21,32 @@ input::placeholder{
 }
 #transaction-area{
     display: none;
+   
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.status{
+    margin: 20px auto;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 7px;
+}
+.submit-section{
+    box-shadow: 5px 5px 5px deepskyblue;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, deeppink, red);
+    color: white;
+}
+/* .input-wd{
+    width: 75%;
+} */
+.custom-padding{
+    padding: 20px;
 }

@@ -23,16 +23,52 @@
     </div>
 
     <div id="transaction-area">
-        <h1>Transaction Area</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quibusdam!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$2100</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row container">
+            <div class="col-md-6">
+                <div class="submit-section custom-padding">
+                    <h4>Deposit</h4>
+                    <input type="text" class="form-control input-wd" placeholder="Wrrite Deposit Amount">
+                    <button class="btn btn-login mt-3">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-section custom-padding">
+                    <h4>withdraw</h4>
+                    <input type="text" class="form-control input-wd" placeholder="Wrrite Withdrwal Amount">
+                    <button class="btn btn-login mt-3">Withdraw</button>
+                </div>
+            </div>
+    
+        </div>
     </div>
+    
     <script>
         const loginBtn = document.getElementById("login");
-        loginBtn.addEventListener("click" , function () {
-           const loginArea = document.getElementById("full-area");
-           loginArea.style.display = "none";
-           const transactionArea = document.getElementById("transaction-area");
-           transactionArea.style.display = "inline-block";
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area");
+            loginArea.style.display = "none".backgroundImage = "none";
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "inline-block";
         })
     </script>
 </body>
