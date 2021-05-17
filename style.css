@@ -22,3 +22,6 @@ input::placeholder{
    color: white ;
    padding: 10px 20px;
 }
+#transaction-area{
+    display: none;
+}

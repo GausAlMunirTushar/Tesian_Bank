@@ -21,11 +21,18 @@
             <button id="login" class="btn btn-login">Submit</button>
         </div>
     </div>
+
+    <div id="transaction-area">
+        <h1>Transaction Area</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quibusdam!</p>
+    </div>
     <script>
         const loginBtn = document.getElementById("login");
         loginBtn.addEventListener("click" , function () {
            const loginArea = document.getElementById("full-area");
            loginArea.style.display = "none";
+           const transactionArea = document.getElementById("transaction-area");
+           transactionArea.style.display = "inline-block";
         })
     </script>
 </body>
